@@ -36,7 +36,37 @@ ng generate component MyComponents/todos
 ng build --configuration production
 ```
 
------
+-----------------------------------
+
+## Deployment process
+
+- Create a GH-pages Branch
+```
+git branch gh-pages
+git checkout gh-pages
+git push origin gh-pages
+```
+
+- On the toolbar under the repo name, click Settings > Pages.
+Under Build and deployment, select Deploy from a branch. Next, select gh-pages as the name of the branch, then click Save. This will create a GH-pages link at the top right under the GH-pages label.
+
+- Copy this link to the published site as illustrated below. You will use the link to set up the base-ref during deployment.
+
+- Install Angular-CLI-GHpages
+```
+ng add angular-cli-ghpages
+```
+
+- Configure your app to a remote server.
+```
+ng deploy --base-href=https://GithubUserName.github.io/GithubRepoName/
+```
+
+- Go to github pages section and visit the link where the app is deployed.
+
+Deployment was done by following this tutorial to [deploy an angular app](https://www.makeuseof.com/angular-app-github-deploy-using-angular-cli/)
+
+-----------------------------------
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.1.5.
 
