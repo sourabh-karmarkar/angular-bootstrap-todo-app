@@ -13,7 +13,7 @@ npm install -g @angular/cli
 
 - Initialize a new angular app
 ```
-ng new sourabh-todo-list
+ng new angular-bootstrap-todo-app
 ```
 
 - Install [bootstrap](https://getbootstrap.com/)

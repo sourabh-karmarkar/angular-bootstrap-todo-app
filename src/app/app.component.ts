@@ -6,7 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'sourabh-todo-list';
+  title = 'angular-bootstrap-todo-app';
   constructor() {
     // setTimeout(() => {
     //   this.title = "Changed title";

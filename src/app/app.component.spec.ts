@@ -20,16 +20,16 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have as title 'sourabh-todo-list'`, () => {
+  it(`should have as title 'angular-bootstrap-todo-app'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('sourabh-todo-list');
+    expect(app.title).toEqual('angular-bootstrap-todo-app');
   });
 
   it('should render title', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('.content span')?.textContent).toContain('sourabh-todo-list app is running!');
+    expect(compiled.querySelector('.content span')?.textContent).toContain('angular-bootstrap-todo-app app is running!');
   });
 });
